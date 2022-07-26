@@ -13,6 +13,10 @@ mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopolo
 // MIDDLEWARE
 app.use(express.urlencoded({extended: true}))
 
+//Languages Controller dependency
+let languagesController = require('./controllers/languages_controller.js')
+app.use('/languages', languagesController)
+
 // ROUTES
 app.get('/', (req, res) => {
   res.send('Welcome to the Hello World! API')
