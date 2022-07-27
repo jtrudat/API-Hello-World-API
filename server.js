@@ -19,7 +19,7 @@ app.use('/languages', languagesController)
 
 // ROUTES
 app.get('/', (req, res) => {
-  res.send('Welcome to the Hello World! API')
+  res.send('Welcome to the Wonderful Hello World! API')
 })
 
 // LISTEN
